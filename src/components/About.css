@@ -31,7 +31,7 @@
 }
 
 .bottompic:hover{
-    width:120px;
+    -webkit-transform:scale(2.5);
    
 }
 
@@ -71,7 +71,7 @@ body{
     background-repeat: no-repeat;
     height:100%; */
    
-   background-color:#30258d;
+    background-color:#100858;
 
 }
 
@@ -121,11 +121,20 @@ body{
     padding-left:2.5em;
     padding-right:2.5em;
     
-    
-    
 }
 
 
+.titulo2{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.ghosty{
+    margin-left:2em;
+    margin-right:2em;
+}
 
 
 
@@ -228,6 +237,7 @@ body{
 
 .langchange{
     width:30px; 
+
     border: 1px solid black;
     transition:0.4s;
 }
@@ -252,10 +262,13 @@ body{
 }
 
 .footer{
+    background-color:rgb(23, 26, 80);
     background-color:rgb(27, 31, 88);
     color:white;
     width: 100%;
-   
+    -webkit-box-shadow: 0 0 15px rgb(0, 0, 0);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    
 }
 
 .forrow{
@@ -301,6 +314,8 @@ body{
 
 
 .belowpwoli{
+    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     background-image: url("../techmongers.gif");
     background-position: center;
     background-size: cover;
@@ -362,6 +377,8 @@ body{
 }
 
 .navbar{
+    
+    background-color:rgb(27, 31, 88);
    
     display:flex;
     flex-direction:row;
@@ -371,19 +388,20 @@ body{
     padding:0.3em;
     margin-top:1.5em;
     margin-bottom:1.5em;
-    margin-left:4em;
-    margin-right:4em;
-    background-color:rgb(27, 31, 88);
-    transition:0.4s;
+    margin-left:2em;
+    margin-right:2em;
+    border-radius: 8px;
     
+    transition:0.4s;
+   text-decoration: none;
     -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 .navbar:hover{
-    background-color: rgb(136, 29, 61);
+    background-color: rgb(124, 27, 56);
     border-radius: 8px;
-    -webkit-box-shadow: 0 0 30px rgb(0, 0, 0);
-    box-shadow: 0 0 30px rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 20px rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
 .navbar li{
@@ -395,8 +413,11 @@ body{
   
   }
 
+  .navbar:hover .navys{
+    text-shadow: 2px 2px 2px #000000;
+}
 .navys{
-    text-decoration:none;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -413,7 +434,9 @@ body{
 }
 
 .logo:hover{
-    width:80px;
+    -webkit-transform:scale(2.5);
+    opacity: 0.82;
+
 }
 
 .about p{
@@ -440,7 +463,10 @@ body{
     padding: 5px 8px;
     font-size: 14px;
     z-index: 1;
-    color:rgb(221, 221, 221);
+    color:rgb(245, 244, 244);
+    border-radius: 200px;
+    background-color: rgb(0, 151, 58);
+    
     font-family: 'Gloria Hallelujah', cursive;
     transition:0.4s;
     font-weight: 500;
@@ -467,6 +493,10 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .ghosty{
+        width:120px;
     }
 }
 
@@ -515,6 +545,12 @@ body{
     
     }
 
+
+    @media only screen and (max-width:630px){
+        .ghosty{
+            width:80px;
+        }
+    }
 @media only screen and (max-width:600px){
     .navbar{
         display:none;
@@ -587,6 +623,13 @@ body{
     }
 }
 
+
+@media only screen and (max-width:525px){
+    .ghosty{
+        width:50px;
+        margin: 0;
+    }
+}
 @media only screen and (max-width:335px){
     .projects h1{
         font-size: 10px;

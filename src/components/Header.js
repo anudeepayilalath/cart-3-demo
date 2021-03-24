@@ -1,7 +1,9 @@
 import React from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 import './Header.css';
 import Pwoli from '../pwoli.gif';
 import Facebook from '../facebook.png';
+import Snapgif from '../hitting2.gif';
 import Reddit from '../reddit.png';
 import Instagram from '../instagram.png';
 import Twitter from '../twitter.png';
@@ -10,13 +12,14 @@ import Side1 from '../sides1.gif';
 import Side2 from '../sides2.gif';
 import SS from '../hori1.jpg';
 import SS2 from '../hori2.jpg';
-
+import Linea from '../linea.gif';
 import Mypic from '../Untitled design (1).png';
 import Giffy from '../yy3.gif';
 import Mygif from '../source.gif';
 import Man from '../man.gif';
 import Man2 from '../man2.gif';
 import Scroll from '../scrolling.jpg';
+import Lineahori from '../lineahori.gif';
 // import Giff2 from '../60203889.png';
 import Htmlp from '../htmlp.webp';
 import Jsp from '../jsp.gif';
@@ -32,6 +35,7 @@ import {Link} from 'react-router-dom';
 const Header = () =>{
     return(
         <div>
+            
             <div className="navbar">
 
                 <div className="dropdown">
@@ -42,7 +46,9 @@ const Header = () =>{
                 </div>
                 
               <Link to="/about"> <li className="navys">About</li></Link> 
-               <Link to="/"> <img src={Logo} className="logo" width="30px"></img></Link>
+        
+             <Link to="/"> <img src={Logo} className="logo" width="30px"></img></Link>
+              
               
               <div className="dropdown">
               <Link to="/" className="linked"> <li className="navys">Projects</li></Link>
@@ -58,9 +64,9 @@ const Header = () =>{
             <div className="imgdiv">
             
             <div className="topimgs">
-            <img className="scary1" src={Side1}width="150px"></img>
+            <img className="scary1" src={Side2}width="120px"></img>
             <img className="giffy" src={Giffy}  ></img>
-            <img className="scary2"src={Side2} width="150px"></img>
+            <img className="scary2"src={Side1} width="120px"></img>
             </div>
                 
             
@@ -104,8 +110,8 @@ const Header = () =>{
                 <span>T</span>
                 <span>H</span>
                 </h1>
-                <p className="p">"I am an enthusiastic and hardworking front-end developer <br></br>committed to learning and developing creative solutions. 
-                I consider the trust and satisfaction <br></br>from my superiors and colleagues to be the most valuable assets in my professional career."</p>
+                <p className="p">"I am an enthusiastic and hardworking front-end developer committed to learning and developing creative solutions. 
+                I consider the trust and satisfaction from my superiors and colleagues to be the most valuable assets in my professional career."</p>
             </div>
 
             <img className="mygif" width=" 200px"src={Mygif}></img>
@@ -133,7 +139,7 @@ const Header = () =>{
 
              <h1>
                
-                <span> N</span>
+                <span>N</span>
                 <span>O</span>
                 <span>T</span>
                 <span>H</span>
@@ -143,7 +149,6 @@ const Header = () =>{
                 <br></br>
                 <span> T</span>
                 <span>O</span>
-                
                 <span> S</span>
                 <span>E</span>
                 <span>E</span>
@@ -153,15 +158,20 @@ const Header = () =>{
                 <span>E</span>
                 <span> !!</span>
                 <br></br>
-                <span>😅</span>
+                <span>🔧😅</span>
             </h1>
 
+
+        
         </div>
-
-
+                <div className="proheading">
+                <h1>My Projects</h1>
+                </div>
+                <div className="mainproject">
+                    <img className="linea" src={Linea} width="25px"></img>
                 <div className="projects">
-                    <h1>My Projects</h1>
                     
+                    <img src={Lineahori} className="lineahori" width="340px"></img>
 
                     <div className="pro2">
                         <div>
@@ -178,7 +188,7 @@ const Header = () =>{
                        
                         <div>
                       <a href="https://psicologxs-de-calle.netlify.app/"> <img className="two"src={SS2} width="10%" height="25%"></img></a> 
-                        <h3>NGO (Demo)</h3>
+                        <h3>N G O</h3>
                         </div>
                     </div>
 
@@ -187,10 +197,14 @@ const Header = () =>{
                     <div className="proreq">
                         <div>
                          <a href="http://hrup.namli.pw/login"> <img className="req" src={Req}></img></a>
-                          <h3>Holiday Request Platform</h3>
+                          <h3>HrUp Request Holidays</h3>
                         </div> 
                     </div>
+                    <img src={Lineahori} className="lineahori" width="340px"></img>
                 </div>
+                <img src={Linea} className="linea" width="25px"></img>
+                </div>
+               
 
 
                 <div className="livewall">

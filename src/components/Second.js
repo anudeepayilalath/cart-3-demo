@@ -26,6 +26,8 @@ import SS from '../hori1.jpg';
 import SS2 from '../hori2.jpg';
 import Verti from '../verti.jpg';
 import Req from '../req.png';
+import Linea from '../linea.gif';
+import Lineahori from '../lineahori.gif';
 import {Link} from 'react-router-dom';
 
 
@@ -53,13 +55,13 @@ const Second = () =>{
                 <Link to="/"><img className="langchange" src={UsFlag}></img></Link>
             </div>
 
-            
+            <div className="section1">
             <div className="imgdiv">
             
             <div className="topimgs">
-            <img className="scary1" src={Side1}width="150px"></img>
+            <img className="scary1" src={Side1}width="120px"></img>
             <img className="giffy" src={Giffy}  ></img>
-            <img className="scary2"src={Side2} width="150px"></img>
+            <img className="scary2"src={Side2} width="120px"></img>
             </div>
             
             <div className="title">
@@ -94,8 +96,8 @@ const Second = () =>{
                 <span>H</span>
                 </h1>
                 <p className="p">"Soy un desarrollador front-end entusiasta y trabajador
-comprometidos con el aprendizaje<br></br> y el desarrollo de soluciones creativas.
-Considero la confianza y la satisfacción de mis<br></br> superiores y colegas para
+comprometidos con el aprendizaje y el desarrollo de soluciones creativas.
+Considero la confianza y la satisfacción de mis superiores y colegas para
 ser el activo más valioso de mi carrera profesional. "</p>
             </div>
             <img className="mygif" width=" 200px"src={Mygif}></img>
@@ -116,7 +118,7 @@ ser el activo más valioso de mi carrera profesional. "</p>
             </div>
             
             </div>
-
+</div>
            
             <div className="belowpwoli">
 
@@ -141,21 +143,27 @@ ser el activo más valioso de mi carrera profesional. "</p>
    <span> !!</span>
   
    <br></br>
-   <span>😅</span>
+   <span>🔧😅</span>
 </h1>
 
 </div>
 
 
+<div className="proheading">
+                <h1>Mis Proyectos</h1>
+                </div>
+                <div className="mainproject">
+                    <img className="linea" src={Linea} width="25px"></img>
+                <div className="projects">
+                    
+                    <img src={Lineahori} className="lineahori" width="340px"></img>
 
-<div className="projects">
-                    <h1>Mis Proyectos</h1>
                     <div className="pro2">
                         <div>
                          <a href="https://anudeepayilalath.github.io/TV-Series-Project/"> <img className="three" src={Verti}></img></a>
                           <h3>Series de Tele API</h3>
                         </div>
-    
+                                   
                     </div>
                     <div className="pro1">
                         <div>
@@ -165,18 +173,23 @@ ser el activo más valioso de mi carrera profesional. "</p>
                        
                         <div>
                       <a href="https://psicologxs-de-calle.netlify.app/"> <img className="two"src={SS2} width="10%" height="25%"></img></a> 
-                        <h3>ONG (Demo)</h3>
+                        <h3>O N G</h3>
                         </div>
                     </div>
-                    
+
+                   
 
                     <div className="proreq">
                         <div>
                          <a href="http://hrup.namli.pw/login"> <img className="req" src={Req}></img></a>
-                          <h3>Para Solicitar Vacaciones</h3>
+                          <h3>HrUp Solicitar Vacaciones</h3>
                         </div> 
                     </div>
+                    <img src={Lineahori} className="lineahori" width="340px"></img>
                 </div>
+                <img src={Linea} className="linea" width="25px"></img>
+                </div>
+
 
 
             <div className="livewall">

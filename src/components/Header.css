@@ -34,7 +34,7 @@
 }
 
 .bottompic:hover{
-    width:120px;
+    -webkit-transform:scale(1.2);
    
 }
 
@@ -62,9 +62,15 @@
   .fade img.top:hover {
     opacity:0;
   } */
-
-
-
+.pro1{
+    background-color:rgb(27, 31, 88);
+}
+.pro2{
+    background-color:rgb(27, 31, 88);
+}
+.proreq{
+    background-color:rgb(27, 31, 88);
+}
 
 
 body{
@@ -73,8 +79,8 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
     height:100%; */
-   
-   background-color:#30258d;
+    background-color:#150541;
+    background-color:#100858;
 
 }
 
@@ -145,6 +151,7 @@ body{
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
+    margin-top:1em;
 }
 .topimgs img{
     margin-right:2em;
@@ -182,7 +189,19 @@ body{
     box-shadow: -30px -30px 20px  rgba(0,0,0,0.4);
     
 }
-
+.section1{
+    background-image:url("../fantni.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right:4em;
+    margin-left:4em;
+    margin-top:2em;
+    margin-bottom:2em;
+   -webkit-box-shadow: 0 0 30px rgb(0, 0, 0);
+   box-shadow: 0 0 30px rgb(0, 0, 0);
+}
 
 .iconz{
     display:flex;
@@ -191,7 +210,7 @@ body{
     flex-direction: row;
     align-items: center;
     margin-top: 1.4em;
-    background-color: rgb(100, 0, 139);
+    background-color: rgb(91, 0, 128);
     /* box-shadow: -30px 30px 20px  rgba(0,0,0,0.4); */
     border-radius: 80%;
     -webkit-box-shadow: 0 0 30px rgb(0, 0, 0);
@@ -210,7 +229,8 @@ body{
 .expert{
     font-family: 'Londrina Solid', cursive;
     text-shadow: 2px 2px 2px #000000;
-    color:rgb(1, 168, 132);
+    color:rgb(2, 196, 154);
+    
     font-weight: 200;
     font-size: 30px;
     transition:0.4s;
@@ -229,6 +249,7 @@ body{
 
 .langchange{
     width:30px; 
+    
     border: 1px solid black;
     transition:0.4s;
 }
@@ -253,10 +274,13 @@ body{
 }
 
 .footer{
+    background-color:rgb(23, 26, 80);
     background-color:rgb(27, 31, 88);
     color:white;
     width: 100%;
-   
+    -webkit-box-shadow: 0 0 15px rgb(0, 0, 0);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    
 }
 
 .forrow{
@@ -302,6 +326,8 @@ body{
 
 
 .belowpwoli{
+    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     background-image: url("../techmongers.gif");
     background-position: center;
     background-size: cover;
@@ -312,6 +338,7 @@ body{
     justify-content: center;
     align-items: center;
     cursor:context-menu;
+  
 }
 
 .belowpwoli h1{
@@ -368,7 +395,9 @@ li{
     text-decoration: none;
 }
 .navbar{
-   
+    
+    background-color:rgb(27, 31, 88);
+
     display:flex;
     flex-direction:row;
     justify-content:space-around;
@@ -379,17 +408,22 @@ li{
     margin-bottom:1.5em;
     margin-left:4em;
     margin-right:4em;
-    background-color:rgb(27, 31, 88);
+    border-radius: 8px;
+    
     transition:0.4s;
    text-decoration: none;
     -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 .navbar:hover{
-    background-color: rgb(136, 29, 61);
+    background-color: rgb(124, 27, 56);
     border-radius: 8px;
-    -webkit-box-shadow: 0 0 30px rgb(0, 0, 0);
-    box-shadow: 0 0 30px rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 20px rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.navbar:hover .navys{
+    text-shadow: 2px 2px 2px #000000;
 }
 
 .navbar li{
@@ -406,16 +440,37 @@ li{
     border-radius: 2.7px;
     font-size:16.5px;
     background-color: rgb(36, 36, 36);
+    color:rgb(224, 224, 224);
+}
+
+.navys{
+    text-decoration: none;
 }
 
 .logo{
+
     transition:0.2s;
 }
 
 .logo:hover{
-    width:80px;
+    -webkit-transform:scale(2.5);
+    opacity: 0.82;
 }
 
+.lineahori{
+    margin-top:1em;
+    margin-bottom:1em;
+}
+.linea{
+    margin-left:1em;
+    margin-right:1em;
+}
+.proheading{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
 .projects{
     
     display: flex;
@@ -428,8 +483,9 @@ li{
         border-radius:0% 100% 0% 100% / 0% 100% 74% 100% ;
     }
 
-    .projects h1{
-        background-color:rgb(136, 29, 61);
+    .proheading h1{
+        background-color:rgb(122, 27, 56);
+        text-shadow: 2px 2px 2px #000000;
         border-radius: 5px;
         font-size:25px;
         color:rgb(236, 236, 236);
@@ -445,7 +501,7 @@ li{
     }
 
 
-    .projects h1:hover{
+    .proheading h1:hover{
         background-color: rgb(53, 53, 53);
        
     }
@@ -521,12 +577,14 @@ li{
     -webkit-transform: scale(0.8); /* Safari 3-8 */
     transform: scale(0.8); 
     border-radius: 300px;
-    
+    opacity:0.84;
 }
+
+
 
 .two:hover{
     
-
+    opacity:0.84;
     -ms-transform: scale(0.9); /* IE 9 */
     -webkit-transform: scale(0.9); /* Safari 3-8 */
     transform: scale(0.9); 
@@ -539,14 +597,14 @@ li{
     -ms-transform: scale(0.9); /* IE 9 */
     -webkit-transform: scale(0.9); /* Safari 3-8 */
     transform: scale(0.9); 
-    
+    opacity:0.84;
 }
 
 .req:hover{
     -ms-transform: scale(0.9); /* IE 9 */
     -webkit-transform: scale(0.9); /* Safari 3-8 */
     transform: scale(0.9);
-    
+   opacity: 0.84;
 }
 
 .pro1 h3{
@@ -582,6 +640,14 @@ li{
     text-decoration: none;
 }
 
+
+.mainproject{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .droppy {
     display: none;
     position: absolute;
@@ -589,7 +655,10 @@ li{
     padding: 5px 8px;
     font-size: 14px;
     z-index: 1;
-    color:rgb(221, 221, 221);
+    color:rgb(245, 244, 244);
+    border-radius: 200px;
+    background-color: rgb(0, 151, 58);
+    
     font-family: 'Gloria Hallelujah', cursive;
     transition:0.4s;
     font-weight: 500;
@@ -606,14 +675,18 @@ li{
 .scary1{
     transition: 0.4s;}
 .scary1:hover{
-    width:145px;
+    width:125px;
 }
 
 .scary2{
     transition: 0.4s;}
 .scary2:hover{
-    width:165px;
+    width:125px;
 }
+
+
+
+
 /* .credits{
     color:rgb(211, 211, 211);
     text-align: right;
@@ -629,7 +702,14 @@ li{
         align-items: center;
     }
 }
-
+@media only screen and (max-width:817px){
+    .title{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+}
 
 @media only screen and (max-width:750px){
     
@@ -639,12 +719,7 @@ li{
         width:150px;
     }
 
-    .title{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;    
-    }
+   
 
     
     
@@ -672,6 +747,10 @@ li{
                 margin-bottom:2em;
             
         }
+
+        .linea{
+            margin:0;
+        }
     
     }
 
@@ -679,7 +758,10 @@ li{
     .navbar{
         display:none;
     }
-
+.section1{
+    margin-right:0.2em;
+  margin-left:0.2em;
+}
     .scary1{
         display: none;
     }
@@ -757,8 +839,21 @@ li{
     }
 }
 
+
+@media only screen and (max-width:500px){
+    .linea{
+        display: none;
+    }
+
+    .lineahori{
+        width:160px;
+    }
+}
+
+
 @media only screen and (max-width:335px){
-    .projects h1{
+   
+    .proheading h1{
         font-size: 10px;
         
     }
